@@ -1,9 +1,9 @@
 package myLib
 
 func main() {
-	DoSomething(true)
+	DoSomething(0)
 }
 
-func DoSomething(do bool) bool {
+func DoSomething(do int) int {
 	return do
 }
