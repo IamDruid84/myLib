@@ -1,28 +1,22 @@
 <?xml version="1.0" ?>
 <testsuites name="codescoring">	
     <testsuite time="" name= "/home/dude/GolandProjects/johnny-depp/fixtures/manifests/python/poetry.lock">		
-     <testsuite time="" name= "django@3.0.7">
-         <testsuite tests= "2" failures="2" errors="0" skipped="0" time="" name= "Vulnerabilities">
-           <testcase classname="Vulnerabilities" name="CVE-2021-35042"  time="">
-                <failure message= "[7.5 High] [9.8 Critical]" type="description">Django 3.1.x before 3.1.13 and 3.2.x before 3.2.5 allows QuerySet.order_by SQL injection if order_by is untrusted input from a client of a web application.</failure>
-            </testcase>
-            <testcase classname="Vulnerabilities" name=" CVE-2022-28346"  time="">
-                <failure message="[7.5 High] [9.8 Critical]" type="description">An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. QuerySet.annotate(), aggregate(), and extra() methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed **kwargs.</failure>
-            </testcase>
-          </testsuite>        
+         <testsuite tests= "2" failures="2" errors="0" skipped="0" time="" name= "pkg:pypi/django@3.0.7">
+            <testcase classname="pkg:pypi/django@3.0.7" name="[7.5 High] [9.8 Critical] CVE-2021-35042"  time="">
+            <failure type="description">Django 3.1.x before 3.1.13 and 3.2.x before 3.2.5 allows QuerySet.order_by SQL injection if order_by is untrusted input from a client of a web application.</failure>
+        </testcase>
+        <testcase classname="pkg:pypi/django@3.0.7" name="[7.5 High] [9.8 Critical] CVE-2022-28346"  time="">
+            <failure type="description">An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. QuerySet.annotate(), aggregate(), and extra() methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed **kwargs.</failure>
+        </testcase>       
         </testsuite>
-    <testsuite time="" name= "pkg:pypi/py@1.9">
-        <testsuite tests= "1" failures="1" errors="0" skipped="0" time="" name= "Vulnerabilities">		
-            <testcase classname="Vulnerabilities" name=" CVE-2020-29651"  time="">
+        <testsuite tests= "1" failures="1" errors="0" skipped="0" time="" name= "pkg:pypi/py@1.9">		
+            <testcase classname="pkg:pypi/py@1.9" name="CVE-2020-29651"  time="">
                 <failure message="[5.0 Medium] [7.5 High] " type="description">A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality.</failure>
             </testcase>
-        </testsuite>         
-    </testsuite>
-        <testsuite time="" name= "pkg:pypi/py@8.0">
-        <testsuite tests= "1" failures="0" errors="0" skipped="0" time="" name= "Vulnerabilities">	
+        </testsuite>   
+        <testsuite tests= "0" failures="0" errors="0" skipped="0" time="" name= "pkg:pypi/py@1.9">	
             <testcase classname="Vulnerabilities" name=""  time="">
             </testcase>
-        </testsuite>         
-    </testsuite>
+        </testsuite>        
     </testsuite>
 </testsuites>
