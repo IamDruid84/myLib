@@ -1,6 +1,7 @@
 <?xml version="1.0" ?>
 <testsuites name="codescoring">	
-    <testsuite tests= "8" failures="8" errors="0" skipped="0" time="" name= "pkg:pypi/django@3.0.7">		
+    <testsuite time="" name= "/home/dude/GolandProjects/johnny-depp/fixtures/manifests/python/poetry.lock">		
+     <testsuite tests= "8" failures="8" errors="0" skipped="0" time="" name= "django@3.0.7">		   
        <testcase classname="django@3.0.7" name="[7.5 High] [9.8 Critical] CVE-2021-35042"  time="">
             <failure type="description">Django 3.1.x before 3.1.13 and 3.2.x before 3.2.5 allows QuerySet.order_by SQL injection if order_by is untrusted input from a client of a web application.</failure>
         </testcase>
@@ -25,6 +26,7 @@
         <testcase classname="django@3.0.7" name="[5.0 Medium] [7.5 High] CVE-2021-45116"  time="">
             <failure type="description">An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language&#39;s variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key.</failure>
         </testcase>
+          </testsuite>
     </testsuite>
     <testsuite tests= "1" failures="1" errors="0" skipped="0" time="" name= "pkg:pypi/py@1.9">		
         <testcase classname="pkg:pypi/py@1.9" name="[5.0 Medium] [7.5 High] CVE-2020-29651"  time="">
