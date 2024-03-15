@@ -10,13 +10,11 @@
         </testcase>       
         </testsuite>
         <testsuite tests= "1" failures="1" errors="0" skipped="0" time="" name= "pkg:pypi/py@1.9">		
-            <testcase classname="pkg:pypi/py@1.9" name="CVE-2020-29651"  time="">
-                <failure message="[5.0 Medium] [7.5 High] " type="description">A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality.</failure>
+            <testcase classname="pkg:pypi/py@1.9" name="[5.0 Medium] [7.5 High] CVE-2020-29651"  time="">
+                <failure type="description">A denial of service via regular expression in the py.path.svnwc component of py (aka python-py) through 1.9.0 could be used by attackers to cause a compute-time denial of service attack by supplying malicious input to the blame functionality.</failure>
             </testcase>
         </testsuite>   
-        <testsuite tests= "0" failures="0" errors="0" skipped="0" time="" name= "pkg:pypi/py@1.9">	
-            <testcase classname="Vulnerabilities" name=""  time="">
-            </testcase>
+        <testsuite tests= "0" failures="0" errors="0" skipped="0" time="" name= "pkg:pypi/py@8.9">	
         </testsuite>        
     </testsuite>
 </testsuites>
