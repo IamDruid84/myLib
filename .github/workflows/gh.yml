@@ -1,5 +1,8 @@
-test:
-    name: JUNIT test
+name: JUINT_Test
+on:
+push:
+branches:
+  -main
     uses: test-summary/action@v2
     with:
-        paths: "*.xml"
+        paths: ".xml"
