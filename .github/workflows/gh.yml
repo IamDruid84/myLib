@@ -1,13 +1,13 @@
 name: Test
 on: push
 jobs:
-  c-clar:
-    name: C / Clar
+  juint:
+    name: junit
     runs-on: ubuntu-latest
 
     steps:
       - name: Create test summary
-        uses: test-summary/action@v1
+        uses: test-summary/action@v2
         with:
           paths: "*.xml"
         if: always()
