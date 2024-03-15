@@ -11,6 +11,6 @@ jobs:
         if: always()
         with:
           files: |
-            tests/**/*.xml
-            tests/**/*.trx
-            tests/**/*.json
+            tests/*.xml
+            tests/*.trx
+            tests/*.json
