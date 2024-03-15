@@ -1,8 +1,5 @@
-name: JUnit_Test
-
-jobs:
-    - name: Create test summary
-      uses: test-summary/action@v1
-      with:
+test:
+    name: JUNIT test
+    uses: test-summary/action@v2
+    with:
         paths: "*.xml"
-      
