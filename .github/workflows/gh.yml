@@ -14,4 +14,13 @@ jobs:
       with:
         files: |
           **/*.xml
+    - name: Analyze JUnit.xml test report
+  # You may pin to the exact commit or the version.
+  # uses: tarappo/junit-test-case-analyzer@8f217bfa69dad511b3fb811fb213ca6594562375
+      uses: tarappo/junit-test-case-analyzer@v1.1.0
+      with:
+    # JUnit.xml report path
+        junit_report_paths: |
+          **/*.xml
+          
     
