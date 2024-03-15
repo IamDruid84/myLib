@@ -4,5 +4,5 @@ jobs:
     - name: Create test summary
       uses: test-summary/action@v1
       with:
-        paths: *.xml
+        paths: "*.xml"
       
