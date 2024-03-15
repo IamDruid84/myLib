@@ -1,8 +1,13 @@
-name: JUINT_Test
-on:
-push:
-branches:
-  -main
-    uses: test-summary/action@v2
-    with:
-        paths: ".xml"
+name: Test
+on: push
+jobs:
+  c-clar:
+    name: C / Clar
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create test summary
+        uses: test-summary/action@v1
+        with:
+          paths: "*.xml"
+        if: always()
