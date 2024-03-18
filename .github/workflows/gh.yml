@@ -19,8 +19,7 @@ jobs:
       with:
          # Command to be sent to SARIF Multitool
         command: 'validate tests/sarif.sarif'
-    - name: Upload SARIF file
-      uses: github/codeql-action/upload-sarif@v3
+    - name: SARIF Annotator
+      uses: SirYwell/sarif-annotator@v0.1.0
       with:
-          # Path to SARIF file relative to the root of the repository
-          sarif_file: tests/sarif.sarif
+          report-path: tests/sarif.sarif
