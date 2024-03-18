@@ -20,6 +20,6 @@ jobs:
          # Command to be sent to SARIF Multitool
         command: 'validate tests/sarif.sarif'
     - name: SARIF Annotator
-      uses: SirYwell/sarif-annotator@v0.1.0
+      uses: SirYwell/sarif-annotator@v0.2.1
       with:
           report-path: tests/sarif.sarif
