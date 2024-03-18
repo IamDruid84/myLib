@@ -20,6 +20,6 @@ jobs:
          # Command to be sent to SARIF Multitool
         command: 'validate tests/sarif.sarif'
     - name: SARIF upload
-      uses: github/codeql-action/upload-sarif@v1
+      uses: github/codeql-action/upload-sarif@v2
       with:
           report-path: tests/sarif.sarif
