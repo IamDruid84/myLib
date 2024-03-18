@@ -14,6 +14,11 @@ jobs:
       with:
         files: |
           tests/**/*.xml
+    - name: SARIF Multitool
+      uses: microsoft/sarif-actions@v0.1
+      with:
+         # Command to be sent to SARIF Multitool
+        command: 'validate tests/sarif.sarif'
     - name: Upload SARIF file
       uses: github/codeql-action/upload-sarif@v3
       with:
@@ -22,8 +27,3 @@ jobs:
           # Optional category for the results
           # Used to differentiate multiple results for one commit
           category: my-analysis-tool
-    - name: SARIF Multitool
-      uses: microsoft/sarif-actions@v0.1
-      with:
-         # Command to be sent to SARIF Multitool
-        command: 'validate tests/sarif.sarif'
