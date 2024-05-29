@@ -1,3 +1,3 @@
-module github.com/Druidis4e/myLib/v2
+module github.com/Druidis4e/myLib
 
 go 1.16
